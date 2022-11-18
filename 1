@@ -1,0 +1,35 @@
+class DataSheet:
+    def __init__(self,name,height,sex,weight,birth_date,allergies,deseases,medicines,health_plan):
+        self.name = name
+        self.height = height
+        self.sex = sex
+        self.weight = weight
+        self.birth_date = birth_date
+        self.allergies = allergies
+        self.deseases = deseases
+        self.medicines = medicines
+        self.health_plan = health_plan
+    def print_information(self):
+        print("Nombre: ",self.name)
+        print("Fecha de nacimiento: ",self.birth_date)
+        print("Previcion: ",self.health_plan)
+        print("Altura: ",self.height)
+        print("Peso: ",self.weight)
+        print("Sexo: ",self.sex)
+        print("Alergias: ",self.allergies)
+        print("Enfermedades: ",self.deseases)
+        print("Medicamentos: ",self.medicines)
+
+name = input("Ingrese el nombre: ")
+birth_date = input("Ingrese la fecha de nacimiento: ")
+health_plan = input("Ingrese el sistema de prevision: ")
+height = input("Ingrese la altura: ")
+weight = input("Ingrese el peso: ")
+sex = input("Ingrese el sexo: ")
+allergies = input("Ingrese las alergias del paciente: ")
+deseases = input("Ingrese las enfermedades del paciente: ")
+medicines = input("Ingrese los mediamentos que toma el paciente: ")
+
+patient1 = DataSheet(name,height,sex,weight,birth_date,allergies,deseases,medicines,health_plan)
+
+patient1.print_information()
